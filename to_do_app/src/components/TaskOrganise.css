@@ -1,0 +1,91 @@
+.task-settings {
+    display: flex;
+    gap: 2vw;
+}
+.task-organise {
+    margin-left: auto;
+    /* z-index: 1000; */
+    gap: 2vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.dropdown {
+      z-index: 1000;
+      position: relative;
+    }
+    
+    .dropdown-btn {
+    background: #ffffff;
+    border: 1px solid ;
+    border-radius: 4px;
+    padding: 5px 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #7d7d7d;
+    }
+    .dropdown-btn:focus,.dropdown-btn:active {
+        outline: none;
+        border-color: #7d7d7d;
+        background-color: #7d7d7d;
+        color: #ffffff;
+    }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1vw;
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu p {
+    margin: 1vw 0;
+    padding: 1vw;
+    /* font-size: 1.5vw; */
+    cursor: pointer;
+  }
+  
+  .dropdown-menu p:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .remove-btn {
+    display: block;
+    margin: 1vw auto;
+    background: none;
+    color: #e74c3c;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .remove-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .pending-status {
+    font-weight: bold;
+    color: #ff0000;
+  }
+  .finished-status {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  
+  .add-task {
+    cursor: pointer;
+  }
+  .add-task p {
+    border: #6c63ff solid;
+    color: #6c63ff;
+    border-radius: 3px;
+    padding: 1vw 0.5vw;
+    margin: 0%;
+    margin-bottom: 2vh;
+  }
