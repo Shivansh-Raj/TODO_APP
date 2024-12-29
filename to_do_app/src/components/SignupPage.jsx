@@ -21,13 +21,14 @@ const SignupPage = () => {
         // navigate("/")
       } catch (error) {
         // alert(error+"  "+username+"  "+password);
-        alert("User with that name already exist!!!")
+        console.log(error)
+        alert("User with that email already exist!!!")
       }
     }
     const handleSubmit = (event) => {
         event.preventDefault();
         if (!username || !password) {
-            alert("Both username and password are required.");
+            alert("Both email and password are required.");
             return;
         }
         submit();

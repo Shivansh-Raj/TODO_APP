@@ -22,13 +22,14 @@ const LoginPage = () => {
         localStorage.setItem(REFRESH_TOKEN, res.data.refresh)
         navigate("/")
       } catch (error) {
+        console.log(error)
         alert("No user with that creadentials exist");
       }
     }
     const handleSubmit = (event) => {
         event.preventDefault();
         if (!username || !password) {
-            alert("Both username and password are required.");
+            alert("Both email and password are required.");
             return;
         }
         submit();
